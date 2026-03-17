@@ -1,3 +1,16 @@
+
+
+# StockIQ — AI Stock Intelligence Dashboard
+
+A full-stack AI-powered stock analysis dashboard built with FastAPI and React. Search any stock globally, get interactive candlestick charts with technical indicators, 35+ financial metrics, stock comparison, and real-time AI analysis powered by Gemini 2.5 Flash.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-green?style=flat&logo=fastapi)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)
+![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-orange?style=flat&logo=google)
+
+---
+
 ## 🚀 Demo Preview
 
 ### Homepage
@@ -12,16 +25,6 @@
 ### Stock Comparison
 ![Comparison](assets/Comparison.png)
 
-# StockIQ — AI Stock Intelligence Dashboard
-
-A full-stack AI-powered stock analysis dashboard built with FastAPI and React. Search any stock globally, get interactive candlestick charts with technical indicators, 35+ financial metrics, stock comparison, and real-time AI analysis powered by Gemini 2.5 Flash.
-
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat&logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-green?style=flat&logo=fastapi)
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat&logo=react)
-![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-orange?style=flat&logo=google)
-
----
 ## 🔥 Key Highlights
 
 - Built a full-stack AI-powered stock analysis system using FastAPI and React  
