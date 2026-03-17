@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- FONT OPTION 5: Editorial — Playfair Display -->
+<!-- Replace your root index.html with this file -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockIQ — AI Stock Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+    <div id="root"></div>
+    <script>
+      const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');let rx=0,ry=0;
+      document.addEventListener('mousemove',e=>{dot.style.left=e.clientX+'px';dot.style.top=e.clientY+'px'});
+      requestAnimationFrame(function a(){rx+=(parseFloat(dot.style.left||0)-rx)*.1;ry+=(parseFloat(dot.style.top||0)-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)});
+      document.addEventListener('mousedown',()=>{dot.style.transform='translate(-50%,-50%) scale(0.6)';ring.style.width='48px';ring.style.height='48px'});
+      document.addEventListener('mouseup',()=>{dot.style.transform='translate(-50%,-50%) scale(1)';ring.style.width='32px';ring.style.height='32px'});
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
