@@ -22,6 +22,22 @@ A full-stack AI-powered stock analysis dashboard built with FastAPI and React. S
 ![Gemini](https://img.shields.io/badge/Gemini-2.5_Flash-orange?style=flat&logo=google)
 
 ---
+## 🔥 Key Highlights
+
+- Built a full-stack AI-powered stock analysis system using FastAPI and React  
+- Integrated LLM (Gemini 2.5 Flash) for real-time AI-driven stock insights  
+- Designed scalable REST APIs and handled real-time financial data processing  
+- Implemented technical indicators (SMA, RSI, MACD) using Pandas  
+- Optimized performance using multithreading (ThreadPoolExecutor)  
+- Developed stock comparison and interactive visualization features 
+
+
+## 🎯 Use Cases
+
+- Analyze any stock with real-time data and technical indicators  
+- Compare multiple stocks side-by-side for better decision making  
+- Get AI-powered insights and explanations for market trends  
+
 
 ## Features
 
@@ -34,6 +50,38 @@ A full-stack AI-powered stock analysis dashboard built with FastAPI and React. S
 - **Particle Constellation UI** — Custom canvas animation with mouse interaction
 
 ---
+
+## 🧠 Architecture
+```
+┌─────────────────────────────────────────────────────┐
+│                    React Frontend                    │
+│         (Charts · Metrics · AI Chat · Compare)       │
+└──────────────────────┬──────────────────────────────┘
+                       │ HTTP requests
+                       │ (/chart, /financials, /ai-analysis, /compare)
+┌──────────────────────▼──────────────────────────────┐
+│                  FastAPI Backend                     │
+│                                                      │
+│  ┌─────────────────┐    ┌──────────────────────┐    │
+│  │  yfinance       │    │  Gemini 2.5 Flash    │    │
+│  │  (stock data)   │    │  + Google Search     │    │
+│  └────────┬────────┘    │    Grounding         │    │
+│           │             └──────────▲───────────┘    │
+│  ┌────────▼────────┐               │                │
+│  │  Pandas         │   stock context + user question │
+│  │  Processing     │───────────────┘                │
+│  │  SMA·RSI·MACD   │                                │
+│  └─────────────────┘                                │
+└─────────────────────────────────────────────────────┘
+```
+
+**Flow:**
+- Frontend sends requests to FastAPI endpoints simultaneously
+- yfinance fetches real-time stock data → Pandas calculates technical indicators
+- For AI queries, processed stock data is sent as context to Gemini 2.5 Flash
+- Gemini uses Google Search Grounding when local data is insufficient
+- All responses returned to the React frontend for rendering
+
 
 ## Project Structure
 
