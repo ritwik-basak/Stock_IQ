@@ -1,5 +1,5 @@
 
-.......
+........
 # StockIQ — AI Stock Intelligence Dashboard
 
 A full-stack AI-powered stock analysis dashboard built with FastAPI and React. Search any stock globally, get interactive candlestick charts with technical indicators, 35+ financial metrics, stock comparison, and real-time AI analysis powered by Gemini 2.5 Flash.
