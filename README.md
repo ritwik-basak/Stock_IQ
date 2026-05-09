@@ -1,4 +1,4 @@
-
+.
 ........
 # StockIQ — AI Stock Intelligence Dashboard
 
